@@ -133,19 +133,12 @@ body {
 .site-nav__link:focus {
   color: var(--accent-color);
 }
-
-.site-nav__сurrent {
+.site-nav__link--сurrent {
   position: relative;
 
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   color: var(--accent-color);
-
-  text-decoration: none;
 }
-.site-nav__сurrent::after {
+.site-nav__link--сurrent::after {
   position: absolute;
   bottom: 0;
 
