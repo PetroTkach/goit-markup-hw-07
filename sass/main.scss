@@ -1,55 +1,8 @@
-html {
-  box-sizing: border-box;
-}
+@import './utils/variables';
+@import './base/common';
+@import './base/container';
+@import './components/address';
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  --primary-text-color: #757575;
-  --title-text-color: #000000;
-  --text-color: #212121;
-  --accent-color: #2196f3;
-  --add-color: #ffffff;
-  --bg-color: #2f303a;
-  --team-color: #f5f4fa;
-  --footer-color: rgba(255, 255, 255, 0.6);
-  --shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  --shadow-button: 0px 3px 1px rgba(0, 0, 0, 0.1),
-    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  --shadow-card: 0px 1px 1px rgba(0, 0, 0, 0.12),
-    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  --line-footer: #ececec;
-  --card-border: #eeeeee;
-  --icon-bg: rgba(255, 255, 255, 0.1);
-  --icon-color: #afb1b8;
-  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
-  --back-card: rgba(33, 150, 243, 0.9);
-  --back-work: rgba(47, 48, 58, 0.8);
-  --modal-border: rgba(0, 0, 0, 0.1);
-  --back-modal: rgba(0, 0, 0, 0.2);
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-/* Загальна сторінка */
-ul {
-  list-style: none;
-}
-
-body {
-  font-family: Roboto, sans-serif;
-}
 
 /* Шапка */
 
@@ -64,9 +17,7 @@ body {
   border-bottom: 1px solid var(--line-footer);
 }
 
-.header__container {
-  display: flex;
-}
+
 
 /* header-nav */
 
@@ -328,10 +279,6 @@ body {
   color: var(--accent-color);
 }
 
-textarea {
-  resize: none;
-}
-
 .modal__text {
   font-family: Roboto;
   font-style: normal;
@@ -505,28 +452,13 @@ textarea {
   background: #188CE8;
 }
 
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-}
+
 
 
 /* Особливості */
 
 /* container */
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+
 
 /* features */
 .features {
@@ -843,12 +775,7 @@ textarea {
   background-color: var(--bg-color);
 }
 
-.footer__container {
-  display: flex;
-  align-items: baseline;
 
-  color: var(--add-color);
-}
 
 .footer__link {
   color: var(--add-color);
@@ -866,29 +793,7 @@ textarea {
 .footer__link-web {
   color: var(--accent-color);}
 
-.address {
-  margin-top: 20px;
-}
 
-.address__item {
-  padding-bottom: 9px;
-}
-
-.address__link {
-  color: var(--add-color);
-
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-
-  text-decoration: none;
-}
-
-.address__link--color {
-  color: var(--footer-color);
-}
 
 .network {
   margin-left: 70px;
@@ -1159,7 +1064,7 @@ outline: none;
   color: var(--add-color);
 }
 
-.portfolio-box {
+.portfolio__box {
   padding: 20px 24px;
   border: 1px solid var(--card-border);
 }
